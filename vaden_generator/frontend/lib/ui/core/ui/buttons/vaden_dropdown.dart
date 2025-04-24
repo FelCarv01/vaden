@@ -151,7 +151,7 @@ class _VadenDropdownState extends State<VadenDropdown> {
             height: 18,
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.black,
+              color: VadenColors.blackColor,
             ),
           ),
           Container(
@@ -242,7 +242,7 @@ class _VadenDropdownState extends State<VadenDropdown> {
                         minWidth: dropdownWidth,
                       ),
                       decoration: BoxDecoration(
-                        color: Colors.black,
+                        color: VadenColors.blackColor,
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(
                           color: VadenColors.txtSupport2,
@@ -347,7 +347,7 @@ class _VadenDropdownState extends State<VadenDropdown> {
                 vertical: 8,
               ),
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: VadenColors.blackColor,
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
                   color: VadenColors.txtSupport2,
