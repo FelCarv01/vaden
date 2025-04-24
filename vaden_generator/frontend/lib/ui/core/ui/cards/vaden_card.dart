@@ -167,7 +167,7 @@ class VadenCard extends StatelessWidget {
             height: 18,
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.black,
+              color: VadenColors.blackColor,
             ),
           ),
           Container(

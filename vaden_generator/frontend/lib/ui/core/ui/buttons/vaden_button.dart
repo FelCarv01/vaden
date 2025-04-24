@@ -193,7 +193,7 @@ class VadenButton extends StatelessWidget {
         child: Text(
           label!,
           style: theme.textTheme.bodyLarge?.copyWith(
-            color: Colors.white,
+            color: VadenColors.whiteColor,
             fontWeight: FontWeight.bold,
           ),
         ),

@@ -42,17 +42,17 @@ class VadenDependenciesDialog extends StatefulWidget {
 }
 
 class _VadenDependenciesDialogState extends State<VadenDependenciesDialog> {
-  var _currentCategory = 'Todos';
+  var _currentCategory = 'All'.i18n();
   String? _search;
 
   List<String> _getUniqueCategories(List<Dependency> dependencies) {
     final categories = dependencies.map((dep) => dep.tag).toSet().toList();
-    return ['Todos', ...categories.isEmpty ? [] : categories];
+    return ['All'.i18n(), ...categories.isEmpty ? [] : categories];
   }
 
   List<Dependency> _getFilteredDependencies(List<Dependency> dependencies, [String? search]) {
     if (dependencies.isEmpty) return [];
-    if (_currentCategory == 'Todos') {
+    if (_currentCategory == 'All'.i18n()) {
       if (search == null) return dependencies;
       return dependencies
           .where((dep) => dep.name.toLowerCase().contains(search.toLowerCase()))

@@ -51,7 +51,7 @@ class VadenDependenciesCard extends StatelessWidget {
                 Text(
                   dependency.name,
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                        color: Colors.white,
+                        color: VadenColors.whiteColor,
                         fontWeight: FontWeight.bold,
                       ),
                   overflow: TextOverflow.ellipsis,
@@ -69,6 +69,7 @@ class VadenDependenciesCard extends StatelessWidget {
             ),
           ),
           InkWell(
+            highlightColor: Colors.transparent,
             onTap: () => onRemove(dependency),
             child: _buildCloseButton(),
           ),
@@ -111,7 +112,7 @@ class VadenDependenciesCard extends StatelessWidget {
             child: const Icon(
               Icons.close,
               size: 18,
-              color: Colors.white,
+              color: VadenColors.whiteColor,
             ),
           ),
         ],
